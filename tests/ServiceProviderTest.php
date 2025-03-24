@@ -41,7 +41,8 @@ class ServiceProviderTest extends TestCase
 
         $artisan
             ->assertOk()
-            ->expectsOutputToContain('Configuration partial cached successfully.');
+            ->expectsOutputToContain('Configuration partial cached successfully.')
+            ->run();
 
         self::assertInstanceOf(Application::class, $this->app);
         $configPath = $this->app->getCachedConfigPath();
