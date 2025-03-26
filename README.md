@@ -18,3 +18,9 @@ composer require sunaoka/laravel-partial-config-cache
 ```bash
 php artisan vendor:publish --tag=partial-config
 ```
+
+## Usage
+
+```bash
+php artisan partial:config:cache
+```
